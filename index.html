@@ -1,971 +1,799 @@
-
-
 <!DOCTYPE html>
-<html lang="tr">
-
-<meta http-equiv="content-type" content="text/html;charset=utf-8" />
-<head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-<meta http-equiv="X-UA-Compatible" content="ie=edge">
-
-<meta name="description" content="AllData - WEB Vuln - WAF Protect Verileriniz bizimle güvende.">
-<meta name="author" content="AllData">
-<link rel="canonical" href="#home" />
-
-<meta property="og:site_name" content="AllData - WEB Vuln - WAF Protect Verileriniz bizimle güvende." /> 
-<meta property="og:site" content="https://alldata.com.tr" /> 
-<meta property="og:title" content="AllData - WEB Vuln - WAF Protect Verileriniz bizimle güvende." /> 
-<meta property="og:description" content="AllData - WEB Vuln - WAF Protect Verileriniz bizimle güvende." /> 
-<meta property="og:image" content="#" /> 
-<meta property="og:url" content="https://alldata.com.tr" /> 
-<meta property="og:type" content="article" />
-<meta name="keywords" content="cloud sunucu, fivem, ryzen, intel, oyun sunucusu, game, game server, sunucu, fivem sunucu, mta sunucu, samp sunucu, samp, mta, metin2, red dead redemption, redm, redm sunucu, cloud hosting, vps, vps server, vps server hosting, vps hosting, sanal sunucu, virtual private server, ubuntu sunucu, centos sunucu, debian sunucu, linux sunucu, windows sunucu, freebsd sunucu, game server, oyun sunucusu, fivem sunucu, gta 5 sunucu, ddos korumalı sunucu, ddos, ddos mitigation, ddos korumasi, ddos protection, AntiDDoS, spectrum, mitigation">
-
-<link rel="icon" href="assets/img/favicon.png" type="image/png" sizes="16x16">
-
-<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600&amp;family=Poppins:wght@400;500;600;700&amp;display=swap" rel="stylesheet">
-
-<title>Anasayfa - AllData</title>
-
-<link rel="stylesheet" href="assets/css/main.css">
-<link rel="stylesheet" href="assets/css/ionicons.min.css">
-<link rel="stylesheet" href="assets/css/custom.css">
-<link rel="stylesheet" href="assets/css/typography.css">
-
-<script nonce="511de94a-a905-44f4-b368-fb8490978247" type="8a5ab964741b469b050e0853-text/javascript">(function(w,d){!function(a,b,c,d){a[c]=a[c]||{};a[c].executed=[];a.zaraz={deferred:[],listeners:[]};a.zaraz.q=[];a.zaraz._f=function(e){return async function(){var f=Array.prototype.slice.call(arguments);a.zaraz.q.push({m:e,a:f})}};for(const g of["track","set","debug"])a.zaraz[g]=a.zaraz._f(g);a.zaraz.init=()=>{var h=b.getElementsByTagName(d)[0],i=b.createElement(d),j=b.getElementsByTagName("title")[0];j&&(a[c].t=b.getElementsByTagName("title")[0].text);a[c].x=Math.random();a[c].w=a.screen.width;a[c].h=a.screen.height;a[c].j=a.innerHeight;a[c].e=a.innerWidth;a[c].l=a.location.href;a[c].r=b.referrer;a[c].k=a.screen.colorDepth;a[c].n=b.characterSet;a[c].o=(new Date).getTimezoneOffset();if(a.dataLayer)for(const n of Object.entries(Object.entries(dataLayer).reduce(((o,p)=>({...o[1],...p[1]})),{})))zaraz.set(n[0],n[1],{scope:"page"});a[c].q=[];for(;a.zaraz.q.length;){const q=a.zaraz.q.shift();a[c].q.push(q)}i.defer=!0;for(const r of[localStorage,sessionStorage])Object.keys(r||{}).filter((t=>t.startsWith("_zaraz_"))).forEach((s=>{try{a[c]["z_"+s.slice(7)]=JSON.parse(r.getItem(s))}catch{a[c]["z_"+s.slice(7)]=r.getItem(s)}}));i.referrerPolicy="origin";i.src="cdn-cgi/zaraz/sd0d9.js?z="+btoa(encodeURIComponent(JSON.stringify(a[c])));h.parentNode.insertBefore(i,h)};["complete","interactive"].includes(b.readyState)?zaraz.init():a.addEventListener("DOMContentLoaded",zaraz.init)}(w,d,"zarazData","script");})(window,document);</script>
-</head>
-<body>
-
-<header id="header" class="header-main">
-
-<div id="header-top-bar" class="gray-light-bg">
-<div class="container">
-<div class="row justify-content-between">
-<div class="col-md-7 col-lg-7">
-<div class="topbar-text d-none d-md-block d-lg-block">
-<ul class="list-inline">
-<li class="list-inline-item text-black">
-<a href="https://wa.me/#"><i class="fa fa-phone mr-2"></i> +90 544 472 45 25</a>
-</li>
-<li class="list-inline-item text-black"><a href="iletisim.html"><i class="fa fa-comments mr-2"></i> Canlı Destek
-</a></li>
-
-</ul>
-</div>
-</div>
-
-<div class="col-md-4 col-lg-4">
-<div class="topbar-text">
-<ul class="list-inline text-right">
-
-
-
-<li class="list-inline-item text-black"><a href="#"><i class="fa fa-user mr-2"></i> Giriş Yap</a></li>
-<li class="list-inline-item text-black"><a href="#"><i class="fa fa-lock mr-2"></i> Kayıt Ol</a>
-</li>
-</ul>
-</div>
-</div>
-</div>
-</div>
-</div>
-
-
-<div id="logoAndNav" class="main-header-menu-wrap white-bg border-bottom">
-<div class="container">
-<nav class="js-mega-menu navbar navbar-expand-md header-nav">
-
-<a class="navbar-brand" href="index.html"><img src="assets/img/logo.png" width="120" alt="logo" class="img-fluid" /></a>
-
-
-<button type="button" class="navbar-toggler btn" aria-expanded="false" aria-controls="navBar" data-toggle="collapse" data-target="#navBar">
-<i id="hamburgerTrigger">
-<i class="fa fa-bars"></i>
-</i>
-</button>
-
-
-<div id="navBar" class="collapse navbar-collapse">
-<ul class="navbar-nav ml-auto main-navbar-nav">
-
-<li class="nav-item hs-has-mega-menu custom-nav-item" data-position="left">
-<a id="homeMegaMenu" class="nav-link custom-nav-link " href="index.php">Ana Sayfa</a>
-
-
-</li>
-
-
-
-
-<li class="nav-item hs-has-mega-menu custom-nav-item" data-max-width="720px" data-position="right">
-<a id="hostingMegaMenu" class="nav-link custom-nav-link main-link-toggle" href="JavaScript:Void(0);" aria-haspopup="true" aria-expanded="false">Sanal Sunucu</a>
-
-<div class="hs-mega-menu w-100 main-sub-menu" aria-labelledby="hostingMegaMenu">
-<div class="row no-gutters">
-<div class="col-md-6">
-
-<div class="title-with-icon-item">
-<a class="title-with-icon-link" href="vds-sunucu.html">
-<div class="media">
-<div class="menu-item-icon"><i class="fa fa-server"></i></div>
-<div class="media-body">
-<i class="u-header__promo-title">Sanal Sunucu</i>
-<small class="u-header__promo-text">Kişisel işlerinizi yapabileceğiniz ve son derece uygun fiyatlı bir sunucuya ihtiyacınız varsa bu sunucular tam size göre.</small>
-</div>
-</div>
-</a>
-</div>
-
-
-
-
-</div>
-<div class="col-md-6">
-<div class="title-with-icon-item">
-<a class="title-with-icon-link" href="proxy.html">
-<div class="media">
-<div class="menu-item-icon"><i class="fa fa-server"></i></div>
-<div class="media-body">
-<i class="u-header__promo-title">Mobil Proxy </i>
-<small class="u-header__promo-text">İhtiyaçlarınıza göre şekillendirilmiş, Mobil Proxy sunucuları</small>
-</div>
-</div>
-</a>
-</div>
-
-</li>
-
-
-<li class="nav-item hs-has-mega-menu custom-nav-item gizle" data-max-width="720px" data-position="right">
-<a id="hostingMegaMenu" class="nav-link custom-nav-link main-link-toggle" href="oyun-sunucusu.html" aria-haspopup="true" aria-expanded="false">Oyun Sunucusu</a>
-
-<div class="hs-mega-menu w-100 main-sub-menu" aria-labelledby="hostingMegaMenu">
-<div class="row no-gutters">
-<div class="col-md-6">
-
-<div class="title-with-icon-item">
-<div class="media">
-<div class="media-body">
-
-
-
-
-</div>
-</div>
-</a>
-</div>
-
-</div>
-</div>
-</div>
-
-</li>
-
-<a class="nav-link custom-nav-link " href="ddoskoruma.html">DDoS Koruma</a>
-<li class="nav-item hs-has-mega-menu custom-nav-item" data-max-width="250px" data-position="right">
-<a id="aboutMegaMenu" class="nav-link custom-nav-link main-link-toggle" href="JavaScript:Void(0);" aria-haspopup="true" aria-expanded="false">Kurumsal</a>
-
-<div class="hs-mega-menu main-sub-menu" aria-labelledby="aboutMegaMenu" style="min-width: 330px;">
-
-<div class="title-with-icon-item">
-<a class="title-with-icon-link" href="iletisim.html">
-<div class="media align-items-center">
-<i class="far fa-comment-dots" style="font-size: 20px; margin-left: 6px; margin-right: 22px;"></i>
-<div class="media-body">
-<i class="u-header__promo-title">İletişim</i>
-<small class="u-header__promo-text">Bizimle kolayca iletişim kurabilirsiniz
-</small>
-</div>
-</div>
-</a>
-</div>
-
-
-<div class="title-with-icon-item">
-<a class="title-with-icon-link" href="hakkimizda.html">
-<div class="media align-items-center">
-<i class="far fa-question-circle" style="font-size: 23px; margin-left: 4px; margin-right: 20px;"></i>
-<div class="media-body">
-<i class="u-header__promo-title">Hakkımızda</i>
-<small class="u-header__promo-text">Firmamız hakkında detaylar
-</small>
-</div>
-</div>
-</a>
-</div>
-
-
-<div class="title-with-icon-item">
-<a class="title-with-icon-link" href="sozlesmeler.html">
-<div class="media align-items-center">
-<div class="menu-item-icon"><i class="far fa-file-alt" style="font-size: 20px; margin-left: 7px; margin-right: 9px;"></i></div>
-<div class="media-body">
-<i class="u-header__promo-title">Sözleşmeler</i>
-<small class="u-header__promo-text">Sözleşmelerimizi inceleyebilirsiniz
-</small>
-</div>
-</div>
-</a>
-</div>
-
-<div class="title-with-icon-item">
-<div class="media align-items-center">
-<div class="media-body">
-</small>
-</div>
-</div>
-</a>
-</div>
-
-
-</div>
-
-</li>
-
-
-<li class="nav-item header-nav-last-item d-flex align-items-center">
-<a class="btn primary-solid-btn animated-btn" href="#" target="_blank">
-Müşteri Paneli</a>
-</li>
-
-</ul>
-</div>
-
-</nav>
-</div>
-</div>
-
-</header>
-
-<div class="main">
-
-<section class="hero-equal-height ptb-100 gradient-overly-right">
-<div id="particles-js"> </div>
-<div class="container">
-<div class="row align-items-center justify-content-between">
-<div class="col-md-7 col-lg-6">
-<div class="hero-content-wrap text-white position-relative z-index">
-<h1 class="text-white">Sunucu Hizmeti</h1>
-<p class="lead">Web sitenizi ve sunucunuzu dünya çapında ziyaretçilerinize minimum gecikmeyle ulaştırarak sizi 7/24 saldırılardan koruruz.</p>
-<ul class="list-unstyled tech-feature-list text-white">
-<li class="py-1"><i class="ti-control-forward mr-2"></i><strong>Kolay</strong> Kontrol Paneli</li>
-<li class="py-1"><i class="ti-control-forward mr-2"></i><strong>SSD</strong> Diskler</li>
-<li class="py-1"><i class="ti-control-forward mr-2"></i><strong>Hızlı</strong> Destek</li>
-<li class="py-1"><i class="ti-control-forward mr-2"></i><strong>99%</strong> Uptime</li>
-<li class="py-1"><i class="ti-control-forward mr-2"></i><strong>Özel Üst Düzey</strong> DDoS Koruması</li>
-</ul>
-</div>
-</div>
-<div class="col-md-5 col-lg-4">
-<img src="assets/img/data-center.svg" class="animasyonlu" alt="Sunucu Resmi">
-</div>
-</div>
-</div>
-</section>
-
-
-<section class="contact-us-promo promo-top pt-100 mt--165">
-<div class="container">
-<div class="row">
-<div class="col-lg-3 col-md-6 col-sm-6">
-<div class="card single-promo-card single-promo-hover text-center shadow-sm">
-<div class="card-body py-5">
-<div class="pb-2">
-<i class="fa-solid fa-arrow-pointer icon-sm color-primary"></i>
-</div>
-<div>
-<h5 class="mb-0">Kolay Kurulum</h5>
-<p class="text-muted mb-0">Tek tıklama ile kurun </p>
-</div>
-</div>
-</div>
-</div>
-<div class="col-lg-3 col-md-6 col-sm-6">
-<div class="card single-promo-card single-promo-hover text-center shadow-sm">
-<div class="card-body py-5">
-<div class="pb-2">
-<i class="fa fa-shapes icon-sm color-primary"></i>
-</div>
-<div>
-<h5 class="mb-0">Yüksek Uptime</h5>
-<p class="text-muted mb-0">Kesintisiz hizmet alın</p>
-</div>
-</div>
-</div>
-</div>
-<div class="col-lg-3 col-md-6 col-sm-6">
-<div class="card single-promo-card single-promo-hover text-center shadow-sm">
-<div class="card-body py-5">
-<div class="pb-2">
-<i class="fa fa-envelope icon-sm color-primary"></i>
-</div>
-<div>
-<h5 class="mb-0">Mail Adresimiz</h5>
-<p class="text-muted mb-0"><a href="/cdn-cgi/l/email-protection#37555e5b505e775659435e535358441954585a194345"><i class="__cf_email__" data-cfemail="9cfef5f0fbf5dcfdf2e8f5f8f8f3efb2fff3f1b2e8ee">[email&#160;protected]</i></a></p>
-</div>
-</div>
-</div>
-</div>
-<div class="col-lg-3 col-md-6 col-sm-6">
-<div class="card single-promo-card single-promo-hover text-center shadow-sm">
-<div class="card-body py-5">
-<div class="pb-2">
-<i class="fa fa-phone icon-sm color-primary"></i>
-</div>
-<div>
-<h5 class="mb-0">Canlı Destek</h5>
-<p class="text-muted mb-0">+90 544 472 45 25 </p>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-</section>
-
-
-<section class="our-services ptb-100 gray-light-bg">
-<div class="container">
-<div class="row justify-content-center">
-<div class="col-md-9 col-lg-8">
-<div class="section-heading text-center mb-5 mb-sm-5 mb-md-3 mb-lg-3">
-<div class="slider-wrapper">
-<h2> Herkese Uygun
-<div id="container">
-<div id="text"></div>
-</div>
-Çözümleri!</h2>
-</div>
-</h2>
-<p class="lead">Özenle hazırlamış olduğumuz oyun sunucu, vds sunucu, web hosting hizmetlerimizden satın al ve farkı gör.</p>
-</div>
-</div>
-</div>
-<div class="row">
-<div class="col-md-6 col-lg-4">
-<div class="single-service-plane text-center rounded white-bg shadow-sm p-5 mt-md-4 mt-lg-4">
-<i class="fa fa-globe" style="font-size: 40px;"></i>
-<div class="service-plane-content">
-<h3 class="h5">Sanal Sunucu</h3>
-<p>Optimize edilmiş, performanslı sunucu barındırma hizmetimiz ile hızla çalışmaya başlayın.</p>
-</div>
-<div class="action-wrap mt-3">
-<a href="vds-sunucu.html" class="btn-link">Detaylar <i class="fa fa-long-arrow-alt-right"></i></a>
-</div>
-</div>
-</div>
-<div class="col-md-6 col-lg-4">
-<div class="single-service-plane text-center rounded white-bg shadow-sm p-5 mt-md-4 mt-lg-4">
-<i class="fa fa-server" style="font-size: 40px;"></i>
-<div class="service-plane-content">
-<h3 class="h5">Proxy Sunucu</h3>
-<p>Mobil proxy sunucuları, coğrafi kısıtlamalara tabi olan içeriklere erişimi mümkün kılar.</p>
-</div>
-<div class="action-wrap mt-3">
-<a href="proxy.html" class="btn-link">Detaylar <i class="fa fa-long-arrow-alt-right"></i></a>
-</div>
-</div>
-</div>
-<div class="col-md-6 col-lg-4">
-<div class="single-service-plane text-center rounded white-bg shadow-sm p-5 mt-md-4 mt-lg-4">
-<i class="fa-solid fa-earth-americas" style="font-size: 40px;"></i>
-<div class="service-plane-content">
-<h3 class="h5">DDoS Koruması</h3>
-<p>Layer 3, Layer 4 ve Layer 7 dahil her türlü saldırıya karşı en etkili Anti-DDoS çözümleri.</p>
-</div>
-<div class="action-wrap mt-3">
-<a href="ddoskoruma.html" class="btn-link">Detaylar <i class="fa fa-long-arrow-alt-right"></i></a>
-</div>
-</div>
-</div>
-</div>
-</div>
-</section>
-
-
-<section class="call-to-action ptb-100 gradient-overlay gradient-bg">
-<div class="container">
-<div class="row justify-content-center">
-<div class="col-md-9 col-lg-8">
-<div class="cta-new-wrap text-white text-center">
-<h2 class="text-white">Kalite Güvencesi</h2>
-<p class="lead">Hizmetlerimizi sunarken hedefimiz müşterilerimizin hizmetlerinden memnun kalması üzerinedir.</p>
-<div class="action-btns mt-4">
-<a href="iletisim.html" class="btn solid-white-btn animated-btn mr-lg-3">İletişim</a>
-</div>
-</div>
-</div>
-</div>
-</div>
-</section>
-
-
-<section class="feature-section ptb-100 " style="background-color: #FFFFFF;">
-<div class="container">
-<div class="row justify-content-center">
-<div class="col-md-9 col-lg-8">
-<div class="section-heading text-center mb-5">
-<h2>Sunucu Altyapımız</h2>
-<p class="lead">Hızlı ve yüksek Uptime sunan altyapımızı deneyin. Bu özellikler tüm sunucu ve hosting çözümlerimizde standart olarak gelir.</p>
-</div>
-</div>
-</div>
-<div class="row">
-<div class="col-md-6 col-lg-4">
-<div class="feature-feature-list p-4 text-center">
-<i class="ti-harddrives icon-sm d-block color-primary mb-3"></i>
-<h5 class="mb-2">En İyi Performans</h5>
-<p>Son teknolojiye sahip veri merkezlerimiz, ışık hızında web sitesi yükleme süreleri sunmak ve ziyaretçileriniz için en iyi performansı sağlamak için en son teknolojileri kullanır.</p>
-</div>
-</div>
-<div class="col-md-6 col-lg-4">
-<div class="feature-feature-list p-4 text-center">
-<i class="ti-rss-alt icon-sm d-block color-primary mb-3"></i>
-<h5 class="mb-2">Uptime Garantisi</h5>
-<p>AntiDDoS %99,9 uptime garantisi vererek web sitenizin ziyaretçileriniz için her zaman erişilebilir olmasını sağlar.</p>
-</div>
-</div>
-<div class="col-md-6 col-lg-4">
-<div class="feature-feature-list p-4 text-center">
-<i class="ti-lock icon-sm d-block color-primary mb-3"></i>
-<h5 class="mb-2">DDoS Koruma</h5>
-<p>Tüm sunucularımız sizi çevrimiçi tutmak için özel korumalarla donatılmıştır. Yaygın olan özel script/methodlar tamamen engellidir, olası bir saldırıda ekibimiz anında müdahele sağlar.</p>
-</div>
-</div>
-<div class="col-md-6 col-lg-4">
-<div class="feature-feature-list p-4 text-center">
-<i class="ti-world icon-sm d-block color-primary mb-3"></i>
-<h5 class="mb-2">Özel Kontrol Paneli</h5>
-<p>Özel AntiDDoS Kontrol(NCP) panelimiz, yönetmeyi bir esinti haline getirir. Sadece birkaç tıklamayla web siteniz, alan adlarınız, veritabanlarınız ve e-posta hesaplarınız üzerinde tam kontrollü bir şekilde işlem sağlayabilirsiniz.</p>
-</div>
-</div>
-<div class="col-md-6 col-lg-4">
-<div class="feature-feature-list p-4 text-center">
-<i class="ti-location-pin icon-sm d-block color-primary mb-3"></i>
-<h5 class="mb-2">Multi Lokasyon</h5>
-<p>Sunucularımız multi lokasyon olup müşterilerimize en düşük gecikme süresi boyunca ulaşmasını sağlayan optimize edilmiş yazılımla birinci sınıf, yüksek hızlı bir ağda çalışır.</p>
-</div>
-</div>
-<div class="col-md-6 col-lg-4">
-<div class="feature-feature-list p-4 text-center">
-<i class="ti-wallet icon-sm d-block color-primary mb-3"></i>
-<h5 class="mb-2">Kolay Ödeme</h5>
-<p>Mastercard & Visa ile hızlı ve güvenli bir şekilde ödeme yapabilirsiniz.</p>
-</div>
-</div>
-</div>
-</div>
-</section>
-<section id="features" class="feature-tab-section ptb-100" style="background-color: #F8F9FA;">
-<div class="container">
-<div class="row">
-<div class="col-xl-4 col-lg-3 col-12 order-lg-last align-self-center">
-<div class="image-box fadein text-xl-right text-center">
-<img src="assets/img/icon-wordpress-hosting.svg" alt="wp-hosting" class="img-fluid" />
-</div>
-</div>
-<div class="col-xl-8 col-lg-9 col-12 order-xl-first">
-<h2>Sunucu (VDS) Nedir?</h2>
-<p>Fiziksel sunucular sanallaştırma teknolojileri ile bölünerek müşterilere ihtiyaçlarına göre daha uygun bir şekilde sağlanır. VDS kısaltması Virtual Dedicated Server demektir; En popüler bulut hizmeti seçeneklerinden biri olan VDS, kullanıcılara web uygulamalarını geliştirmek, dağıtmak ve barındırmak için tahsis edilmiş sunucu kiralama olanağı sağlar. Bir müşteriye ayrılan VDS kaynakları diğer müşterilerden bağımsız olur böylelikle daha güvenli ve stabil performans alınır.</p>
-<div class="row pt-2">
-<div class="col-md-6 col-12">
-<h5>Avantajları</h5>
-<ul class="disc-style">
-<li>Kaynaklar izole edilip size ayrılır</li>
-<li>İzole olduğu için daha güvenlidir</li>
-<li>Sistemde tam yetki erişiminiz olur</li>
-<li>İhtiyacınıza göre şekillendirebilirsiniz</li>
-</ul>
-</div>
-<div class="col-md-6 col-12">
-<h5>Dezavantajları</h5>
-<ul class="disc-style">
-<li>VPS'ye göre maliyetli olabilir</li>
-<li>Sistem yönetimi size aittir</li>
-</ul>
-</div>
-</div>
-</div>
-</div>
-</div>
-</section>
-<section class="cta-new pb-100" style="background-color: #F8F9FA;">
-<div class="container">
-<div class="row justify-content-between">
-<div class="col-xl-4 col-lg-7 col-12 order-lg-last align-self-center">
-<div class="image-box fadein text-xl-right text-center">
-<img src="assets/img/shared-wp-hosting.svg" alt="wp-hosting" class="img-fluid" />
-</div>
-</div>
-<div class="col-xl-7 col-lg-7 col-12 order-xl-last">
-<h2>Linux Web Hosting Nedir?</h2>
-<p>Bir hizmet sağlayıcısı, web siteleri için dosya DİSK ve siteyi çalıştırma amaçlı web sunucusunda yer ayırıyorsa buna web hosting veya linux hostingde diyebiliriz. Web hosting sitelerinizi internette yayınlamanıza olanak sağlayan bir seçenektir. Genel olarak linux sunucularda web hosting verilirken cPanel Plesk Directadmin Cyberpanel ve benzeri altyapı teknolojileri kullanılır, böylelikle kolayca yönetim sağlayabilirsiniz.</p>
-<div class="row pt-2">
-<div class="col-md-6 col-12">
-<h5>Hosting Özellikleri</h5>
-<ul class="disc-style">
-<li>Günlük yedekleme</li>
-<li>Güvenlik Optimizasyonu</li>
-<li>Performans Optimizasyonu</li>
-<li>Ücretsiz Taşıma Hizmeti</li>
-</ul>
-</div>
-<div class="col-md-6 col-12">
-<h5>Altyapı Özellikleri</h5>
-<ul class="disc-style">
-<li>Cagefs İzolasyonu</li>
-<li>Cloudlinux Sistemi</li>
-<li>Raid SSD Diskler</li>
-<li>LiteSpeed Teknolojisi</li>
-</ul>
-</div>
-</div>
-</div>
-</div>
-</div>
-</section>
-
-<section class="iq-counter-section iq-pb-70">
-         <div class="container">
-            <div class="row align-items-center">
-               <div class="col-lg-6 mb-lg-0 mb-5">
-                  <div class="iq-title-box iq-title-default iq-title-box-2">
-                     <div class="iq-title-icon">
-                     </div>
-                     <i class="iq-subtitle">Bizi tanıyın.</i>
-                     <h2 class="iq-title">Firmamızın İstatistikleri</h2>
-                     <p class="iq-title-desc">Müşterilerimize daha iyi bir Multi Lokasyon, kesintisiz ve performanslı yeni nesil ekipman ve eşsiz bir hizmet sunmak için buradayız. </p>
-                  </div>
-                  <div class="iq-list  iq-two-column">
-                     <ul class="iq-list-with-icon">
-                        <li>
-                           <i class="fa-solid fa-check"></i>Üst Düzey DDoS Koruması
-                        </li>
-                        <li>
-                           <i class="fa-solid fa-check"></i>Mutlu Müşteriler
-                        </li>
-                        <li>
-                           <i class="fa-solid fa-check"></i>Anında Hızlı Destek
-                        </li>
-                        <li>
-                           <i class="fa-solid fa-check"></i>Kalıcı Çözümler
-                        </li>
-                        <li>
-                           <i class="fa-solid fa-check"></i>+14 Yıldan Fazla Deneyim
-                        </li>
-                        <li>
-                           <i class="fa-solid fa-check"></i>Yenilikçi Çözümler
-                        </li>
-                     </ul>
+<html lang="zxx">
+   <head>
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+      <link rel="stylesheet" href="assets/css/animate.css">
+      <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+      <link rel="stylesheet" href="assets/bootstarp/bootstrap.min.css">
+      <link rel="stylesheet" href="assets/css/super-classes.css">
+      <link rel="stylesheet" href="assets/css/style.css">
+      <link rel="stylesheet" href="assets/css/mobile.css">
+      <title>cyber chip | Home</title>
+   </head>
+   <body>
+      <!---header-and-banner-section-->
+      <div class="header-and-banner-con w-100">
+         <div class="header-and-banner-inner-con overlay-content">
+            <header>
+               <!--navbar-start-->
+               <div class="container">
+                  <div class="header-con">
+                     <nav class="navbar navbar-expand-lg navbar-light p-0">
+                        <a class="navbar-brand p-0" href="index.html">
+                        <img src="assets/image/logo-img.png" alt="logo-img" class="img-fluid">
+                        </a>
+                        <button class="navbar-toggler p-0 collapsed" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                        <span class="navbar-toggler-icon"></span>
+                        <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+                           <ul class="navbar-nav">
+                              <li class="nav-item active">
+                                 <a class="nav-link text-white p-0" href="index.html">Home<span class="sr-only">(current)</span></a>
+                              </li>
+                              <li class="nav-item">
+                                 <a class="nav-link text-white p-0" href="about.html">About us</a>
+                              </li>
+                              <li class="nav-item">
+                                 <a class="nav-link text-white p-0" href="services.html"> Services </a>
+                              </li>
+                              <li class="nav-item">
+                                 <a class="nav-link text-white p-0" href="pricing.html"> Pricing</a>
+                              </li>
+                              <li class="nav-item">
+                                 <a class="nav-link text-white p-0" href="team.html">Team</a>
+                              </li>
+                           </ul>
+                           <a href="contact.html" class=" my-2 my-sm-0 contact-btn">Contact us</a>
+                        </div>
+                     </nav>
                   </div>
                </div>
-               <div class="col-lg-6">
+               <!--navbar-end-->
+            </header>
+            <section class="banner-main-con">
+               <div class="container">
+                  <!--banner-start-->
+                  <div class="banner-con">
+                     <div class="row">
+                        <div class="col-lg-7 col-md-7 col-sm-12 d-flex justify-content-center flex-column banner-main-left-con">
+                           <div class="banner-left-con wow slideInLeft">
+                              <div class="banner-heading">
+                                 <h1>24/7 Cybersecurity
+                                    Operation Center
+                                 </h1>
+                              </div>
+                              <div class="banner-content">
+                                 <p class="col-lg-11 pl-0 pr-0">Dolor sit amet consectetur adipisicing elit sed do eiusmod tempor 
+                                    incididunt ut labore et dolore magna aliqua. 
+                                 </p>
+                              </div>
+                              <div class="banner-btn">
+                                 <a href="about.html" class="contact-btn">Get started</a>
+                                 <a href="contact.html" class="contact-btn contact-banner-btn">Contact us</a>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="col-lg-5 col-md-5 col-sm-12">
+                           <div class="banner-right-con wow slideInRight">
+                              <figure class="mb-0">
+                                 <img src="assets/image/banner-right-img.png" alt="banner-right-img">
+                              </figure>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <!--banner-end-->
+               </div>
+            </section>
+         </div>
+      </div>
+      <!---header-and-banner-section-->
+      <!---slider-section-->
+      <section>
+         <div class="slider-con w-100">
+            <div class="container">
+               <div class="slider-heading text-center">
+                  <h5>Partners</h5>
+                  <h2>We're Working With</h2>
+               </div>
+               <div class="row wow fadeInUp">
+                  <div class="col-lg-2 col-md-4 col-6">
+                     <div class="partner-box text-center mb-lg-0 mb-4">
+                        <figure class="mb-0">
+                           <img src="assets/image/slider-item-img1.png" alt="" class="img-fluid">
+                        </figure>
+                     </div>
+                  </div>
+                  <div class="col-lg-2 col-md-4 col-6">
+                     <div class="partner-box text-center mb-lg-0 mb-4">
+                        <figure class="mb-0">
+                           <img src="assets/image/slider-item-img2.png" alt="" class="img-fluid">
+                        </figure>
+                     </div>
+                  </div>
+                  <div class="col-lg-2 col-md-4 col-6">
+                     <div class="partner-box text-center mb-lg-0 mb-4">
+                        <figure class="mb-0">
+                           <img src="assets/image/slider-item-img3.png" alt="" class="img-fluid">
+                        </figure>
+                     </div>
+                  </div>
+                  <div class="col-lg-2 col-md-4 col-6">
+                     <div class="partner-box text-center">
+                        <figure class="mb-0">
+                           <img src="assets/image/slider-item-img4.png" alt="" class="img-fluid">
+                        </figure>
+                     </div>
+                  </div>
+                  <div class="col-lg-2 col-md-4 col-6">
+                     <div class="partner-box text-center">
+                        <figure class="mb-0">
+                           <img src="assets/image/slider-item-img5.png" alt="" class="img-fluid">
+                        </figure>
+                     </div>
+                  </div>
+                  <div class="col-lg-2 col-md-4 col-6">
+                     <div class="partner-box text-center">
+                        <figure class="mb-0">
+                           <img src="assets/image/slider-item-img6.png" alt="" class="img-fluid">
+                        </figure>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </section>
+      <!---slider-section-->
+      <!---information-section-->
+      <section>
+         <div class="informationmain-con dots-left-img w-100">
+            <div class="container overlay-content">
+               <div class="row">
+                  <div class="col-lg-6 col-md-6 col-sm-12 informationmain-left-con">
+                     <div class="informationmainleft-sec-img wow slideInLeft">
+                        <figure class="mb-0">
+                           <img src="assets/image/informationmain-left-sec-img.png" alt="informationmain-left-sec-img">
+                        </figure>
+                     </div>
+                  </div>
+                  <div class="col-lg-6 col-md-6 col-sm-12 informationmain-right-con wow slideInRight">
+                     <div class="informationmain-right-heading">
+                        <h5>Who we are</h5>
+                        <h2>Reduce Risk of Your
+                           Workflow Be Productive
+                        </h2>
+                     </div>
+                     <div class="informationmain-right-content">
+                        <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum 
+                           dolore eu fugiat nulla pariatur excepteur sint occaecat cupidatat 
+                           non proident, sunt in culpa qui officia deserunt mollit anim id est 
+                           laborum incidunt ut labore et dolore magnam.
+                        </p>
+                        <ul class="mb-0 list">
+                           <li><i class="fas fa-check-circle"></i>Aute irure dolor in reprehenderit in voluptate velit esse mollitia.</li>
+                           <li><i class="fas fa-check-circle"></i>dolore eu fugiat nulla pariatur excepteur sint occaecat distincto.</li>
+                           <li><i class="fas fa-check-circle"></i>Non proident, sunt in culpa qui officia deserunt mollit assumea.</li>
+                           <li><i class="fas fa-check-circle"></i>Laborum incidunt ut labore et dolore magnam rugiat  occaecai.</li>
+                        </ul>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </section>
+      <!---information-section-->
+      <!--- Effective-section-->
+      <section>
+         <div class="Effective-con bg-overly-img w-100">
+            <div class="container overlay-content">
+               <div class="Effective-sec-heading text-center">
+                  <h5>What we do</h5>
+                  <h2>Complete And Effective Protection For 
+                     Your Home And Office
+                  </h2>
+               </div>
+               <div class="row wow fadeInUp">
+                  <div class="col-lg-3 col-md-6 col-12">
+                     <div class="Effective-sec-item mb-lg-0 mb-4">
+                        <figure>
+                           <img src="assets/image/Effective-sec-item-img1.png" alt="Effective-sec-item-img" class="img-fluid">
+                        </figure>
+                        <div class="Effective-sec-item-title">
+                           <h4 class="mb-0">Camera 
+                              Surveillence
+                           </h4>
+                           <p class="mb-0">Dolor in reprehenderit 
+                              aolore eu fugiat nulla
+                              non proident sunt in
+                              laborum incidun.
+                           </p>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="col-lg-3 col-md-6 col-12">
+                     <div class="Effective-sec-item mb-lg-0 mb-4">
+                        <figure>
+                           <img src="assets/image/Effective-sec-item-img2.png" alt="Effective-sec-item-img" class="img-fluid">
+                        </figure>
+                        <div class="Effective-sec-item-title">
+                           <h4 class="mb-0">Folder 
+                              Security
+                           </h4>
+                           <p class="mb-0">Dolor in reprehenderit 
+                              aolore eu fugiat nulla
+                              non proident sunt in
+                              laborum incidun.
+                           </p>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="col-lg-3 col-md-6 col-12">
+                     <div class="Effective-sec-item Effective-sec-item3">
+                        <figure>
+                           <img src="assets/image/Effective-sec-item-img3.png" alt="Effective-sec-item-img" class="img-fluid">
+                        </figure>
+                        <div class="Effective-sec-item-title">
+                           <h4 class="mb-0">End to End
+                              Encryption
+                           </h4>
+                           <p class="mb-0">Dolor in reprehenderit 
+                              aolore eu fugiat nulla
+                              non proident sunt in
+                              laborum incidun.
+                           </p>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="col-lg-3 col-md-6 col-12">
+                     <div class="Effective-sec-item">
+                        <figure>
+                           <img src="assets/image/Effective-sec-item-img4.png" alt="Effective-sec-item-img" class="img-fluid">
+                        </figure>
+                        <div class="Effective-sec-item-title">
+                           <h4 class="mb-0">Finger Print
+                              Security
+                           </h4>
+                           <p class="mb-0">Dolor in reprehenderit 
+                              aolore eu fugiat nulla
+                              non proident sunt in
+                              laborum incidun.
+                           </p>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="Effective-link ml-auto mr-auto">
+                     <a href="about.html" class="contact-btn">Get started</a>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </section>
+      <!--- Effective-section-->
+      <!-- service-section -->
+      <div class="service-main-con">
+         <div class="row  ml-0 mr-0">
+            <div class="col-lg-6 pl-0 pr-0">
+               <div class="service-main-left-top-con dots-right-img">
                   <div class="row">
-                     <div class="col-lg-6 col-md-6">
-                        <div class="iq-counter text-center iq-box-shadow iq-counter-style-1">
-                           <div class="counter-content">
-                              <p class="iq-counter-info">
-                                 <i class="timer" data-to="300" data-speed="5000"></i>
-                                 <i class="counter-after-content"></i>
-                                 <i class="counter-symbol">300+</i></p>
-                                 <h5 class="counter-title-text">Müşteri</h5>
-                              </div>
-                           </div>
-                           <div class="iq-counter text-center iq-box-shadow iq-counter-style-1">
-                              <div class="counter-content">
-                                 <p class="iq-counter-info">
-                                    <i class="timer" data-to="450" data-speed="5000"></i>
-                                    <i class="counter-after-content"></i>
-                                    <i class="counter-symbol">450+</i></p>
-                                    <h5 class="counter-title-text">Hosting Hesabı</h5>
-                                 </div>
-                              </div>
-                           </div>
-                           <div class="col-lg-6 col-md-6">
-                              <div class="iq-counter text-center iq-box-shadow iq-counter-style-1">
-                                 <div class="counter-content">
-                                    <p class="iq-counter-info">
-                                       <i class="timer" data-to="420" data-speed="5000"></i>
-                                       <i class="counter-after-content"></i>
-                                       <i class="counter-symbol">420+</i></p>
-                                       <h5 class="counter-title-text">Sanal Sunucu</h5>
-                                       
-                                    </div>
-                                 </div>
-                                 <div class="iq-counter text-center iq-box-shadow iq-counter-style-1">
-                                    <div class="counter-content">
-                                       <p class="iq-counter-info">
-                                          <i class="timer" data-to="900" data-speed="5000"></i>
-                                          <i class="counter-after-content"></i>
-                                          <i class="counter-symbol">900+</i></p>
-                                          <h5 class="counter-title-text">Çözülen Destekler</h5>
+                     <div class="col-xl-7 col-lg-12 ml-auto">
+                        <div class="service-main-left-con wow slideInLeft">
+                           <h5>Reliable IT & Cyber Security</h5>
+                           <h2>Cyber Security Services 
+                              With Top IT Experts
+                           </h2>
+                           <p>Tempore, aute irure dolor in reprehenderit in voluptate velit esse 
+                              dolore eu fugiat nulla pariatur excepteur sint occaecat cupidatat 
+                              non proident, sunt in culpa aui officia.
+                           </p>
+                           <p>Soluta nobis est eligendi optio cumque nihil impedit quo minus 
+                              id ruod maxime placeat facere possimus.
+                           </p>
+                           <div class="row service-skill-sttaf-con">
+                              <div class="col-lg-4 col-lg-4 col-md-4 col-sm-4 col-12">
+                                 <div class="circle-wrap firstPercentage">
+                                    <div class="circle">
+                                       <div class="mask full">
+                                          <div class="fill"></div>
+                                       </div>
+                                       <div class="mask half">
+                                          <div class="fill"></div>
+                                       </div>
+                                       <div class="inside-circle">
+                                          <div class="service-skill-sttaf-item-con">
+                                             <div class="service-skill-sttaf-item-title service-skill-sttaf-item1-con d-flex align-items-center justify-content-center">
+                                                <h4 class="d-table-cell align-middle mb-0 text-center count">85</h4>
+                                                <span class="text-white static-txt2">%</span>
+                                             </div>
+                                          </div>
                                        </div>
                                     </div>
+                                 </div>
+                                 <div class="service-skill-sttaf-item-heading">
+                                    <h3 class="mb-0 text-white">Quality Services</h3>
+                                 </div>
+                              </div>
+                              <div class="col-lg-4 col-md-4 col-sm-4 col-12">
+                                 <div class="circle-wrap secondPercentage">
+                                    <div class="circle">
+                                       <div class="mask full">
+                                          <div class="fill"></div>
+                                       </div>
+                                       <div class="mask half">
+                                          <div class="fill"></div>
+                                       </div>
+                                       <div class="inside-circle">
+                                          <div class="service-skill-sttaf-item-con">
+                                             <div class="service-skill-sttaf-item-title service-skill-sttaf-item2-con text-center d-flex align-items-center justify-content-center">
+                                                <h4 class=" mb-0 text-center count">78</h4>
+                                                <span class="text-white static-txt2">%</span>
+                                             </div>
+                                          </div>
+                                       </div>
+                                    </div>
+                                 </div>
+                                 <div class="service-skill-sttaf-item-heading">
+                                    <h3 class="mb-0 text-white">Skilled Staff</h3>
+                                 </div>
+                              </div>
+                              <div class="col-lg-4 col-lg-4 col-md-4 col-sm-4 col-12">
+                                 <div class="circle-wrap thirdPercentage">
+                                    <div class="circle">
+                                       <div class="mask full">
+                                          <div class="fill"></div>
+                                       </div>
+                                       <div class="mask half">
+                                          <div class="fill"></div>
+                                       </div>
+                                       <div class="inside-circle">
+                                          <div class="service-skill-sttaf-item-con">
+                                             <div class="service-skill-sttaf-item-title service-skill-sttaf-item3-con text-center d-flex align-items-center justify-content-center">
+                                                <h4 class="mb-0 text-center count">64</h4>
+                                                <span class="text-white static-txt2">%</span>
+                                             </div>
+                                          </div>
+                                       </div>
+                                    </div>
+                                 </div>
+                                 <div class="service-skill-sttaf-item-heading">
+                                    <h3 class="mb-0 text-white">Support Team</h3>
                                  </div>
                               </div>
                            </div>
                         </div>
                      </div>
-                  </section>
-
-<div id="faq" class="ptb-100 ">
-<div class="container">
-<div class="row">
-<div class="col-md-9 col-lg-8">
-<div class="section-heading mb-5">
-<h2>Sıkça Sorulan Sorular</h2>
-<p>İnsanlar tarafından sıkça sorulmakta olan sorulara cevap bulun. Hala sorularınız mı var? <a href="iletisim.php" class="page-scroll">İletişim</a></p>
-</div>
-</div>
-</div>
-<div class="row">
-<div class="col-md-12 col-lg-12">
-<div id="accordion-one" class="accordion accordion-faq">
-<div class="card mb-0">
-<a class="card-header collapsed" data-toggle="collapse" href="#collapseOne">
-<h6 class="mb-0 d-inline-block">Web Hosting Nedir?
-</h6>
-</a>
-<div id="collapseOne" class="collapse" data-parent="#accordion-one">
-<div class="card-body" ">
-<p>Web Hosting yani diğer adları ile; hosting, barındırma internet sitenizi yayınlamanız için almanız gereken bir çeşit fiziksel ve sanal bilgisayar türüdür.
-</p>
-</div>
-</div>
-</div>
-<div class="card mb-0">
-<a class="card-header collapsed" data-toggle="collapse" href="#collapseTwo">
-<h6 class="mb-0 d-inline-block">Sunucu (VDS) Nedir?</h6>
-</a>
-<div id="collapseTwo" class="collapse" data-parent="#accordion-one">
-<div class="card-body style=" background-color: #FFFFFF;">
-<p>Sunucu, fiziksel olarak alınan sunucuların sanallaştırma teknolojileri sayesinde bölümlenerek müşterilere ihtiyaçlarına göre satılmasıdır.
-</p>
-</div>
-</div>
-</div>
-<div class="card mb-0">
-<a class="card-header collapsed" data-toggle="collapse" href="#collapseThree">
-<h6 class="mb-0 d-inline-block">Alan Adı Nedir?
-</h6>
-</a>
-<div id="collapseThree" class="collapse" data-parent="#accordion-one">
-<div class="card-body style=" background-color: #FFFFFF;">
-<p>Alan adları, Web sunucularının internetteki adreslerine denmektedir. Bu adres tarayıcıya yazıldığında sunucunun barındığı ip adresine istek iletilir.
-</p>
-</div>
-</div>
-</div>
-<div class="card mb-0">
-<a class="card-header collapsed" data-toggle="collapse" href="#collapseFour">
-<h6 class="mb-0 d-inline-block">Neden AntiDDoS?
-</h6>
-</a>
-<div id="collapseFour" class="collapse" data-parent="#accordion-one">
-<div class="card-body style=" background-color: #FFFFFF;">
-<p>AllData olarak, müşteri memnuniyetini en yüksek öncelik olarak kabul ediyoruz. Bu nedenle sunucu altyapımızdan, destek ekibimize kadar her alanda titizlikle seçimler yapıyoruz. Kurumsal bir çerçevede hareket ediyor ve profesyonel hizmet anlayışını benimseyerek müşterilerimize en iyi deneyimi sunmayı hedefliyoruz. Teknik açıdan da bu çabalarımızı somutlaştırıyoruz; sunucularımız yüksek hızlı donanım ve bağlantılarla donatılmıştır.
-</p>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-
-
-
-
-
-</div>
-
-<div class="header">
-
-<div>
-<svg class="waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto">
-<defs>
-<path id="gentle-wave" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z" />
-</defs>
-<g class="parallax">
-<use xlink:href="#gentle-wave" x="48" y="0" fill="rgba(2, 3, 6,0.7" />
-<use xlink:href="#gentle-wave" x="48" y="3" fill="rgba(2, 3, 6,0.5)" />
-<use xlink:href="#gentle-wave" x="48" y="5" fill="rgba(2, 3, 6,0.3)" />
-<use xlink:href="#gentle-wave" x="48" y="7" fill="#0f0f10" />
-</g>
-</svg>
-</div>
-
-</div>
-
-
-<div class="footer-top gradient-bg">
-<div class="container" style="max-width: 1400px">
-<div class="row">
-<div class="col-md-4" style="margin: 25px;">
-<div class="row footer-top-wrap">
-<div class="footer-nav-wrap text-white">
-<img src="assets/img/logo.png" alt="security" class="img-fluid" style="margin-bottom: 25px;">
-<p style="font-size: 14px; " class="fo-text">AllData firması olarak gelişen teknoloji çağını yakından takip ederek 
-  müşterilerimize en iyi ve yeni nesil teknolojilerle buluşturmayı, sorunsuz bir hizmet sağlamayı amaçlıyoruz.
-   Bunu başarmak için, hizmetlerimizi güçlendirmek için yalnızca en iyi performans gösteren ve güvenilir 
-   donanım ve ağ çözümlerinden bazılarını kullanıyoruz, ayrıca yaptıklarını seven ve ihtiyaçlarınızı 
-   önemseyen yetenekli ve deneyimli insanlardan oluşan bir ekip oluşturduk.</p>
-</div>
-</div>
-</div>
-<div class="col-md-7">
-<div class="row footer-top-wrap">
-<div class="col-md-3 col-sm-6">
-<div class="footer-nav-wrap text-white">
-<h4 class="text-black">Hosting</h4>
-<ul class="nav flex-column text-black">
-<li class="nav-item">
-<a class="nav-link text-black" href="vds-sunucu.html">Sanal Sunucu</a>
-</li>
-<li class="nav-item">
-<a class="nav-link text-black" href="proxy.html">Mobil Proxy</a>
-</li>
-<li class="nav-item">
-<a class="nav-link text-black" href="ddoskoruma.html">DDoS Koruma(Layer7)</a>
-</li>
-</ul>
-
-</div>
-</div>
-<div class="col-md-3 col-sm-6">
-<div class="footer-nav-wrap text-white">
-<h4 class="text-white text-black">Hizmetler</h4>
-<ul class="nav flex-column">
-<li class="nav-item">
-<li class="nav-item">
-<a class="nav-link text-black" href="iletisim.html">Sözleşmeler</a>
-</li>
-<li class="nav-item">
-<a class="nav-link text-black" href="sozlesmeler.phtml">Hizmet Sözleşmesi</a>
-</li>
-<li class="nav-item">
-<a class="nav-link text-black" href="sozlesmeler.html">Gizlilik Sözleşmesi</a>
-</li>
-
-</li>
-</ul>
-</div>
-</div>
-
-<div class="col-md-3 col-sm-6">
-<div class="footer-nav-wrap text-white">
-<h4 class="text-white text-black">Kurumsal</h4>
-<ul class="nav flex-column">
-<li class="nav-item">
-<a class="nav-link text-black" href="hakkimizda.html">Şirket</a>
-</li>
-<li class="nav-item">
-<a class="nav-link text-black" href="hakkimizda.html">Hakkımızda</a>
-</li>
-</li>
-</ul>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-<div class="footer-bottom gray-light-bg py-3">
-<div class="container">
-<div class="row align-items-center justify-content-between">
-<div class="col-md-5 col-lg-5">
-<p class="copyright-text pb-0 mb-0">© 2023 AllData Tüm Hakları Saklıdır. </a>
-</p>
-</div>
-<div class="col-md-7 col-lg-6">
-<div class="payment-method text-right">
-<ul class="list-inline">
-<li class="list-inline-item">
-<img src="assets/img/payment-amex.svg" alt="amex" width="50" />
-</li>
-<li class="list-inline-item">
-<img src="assets/img/payment-visa.svg" alt="visa" width="50" />
-</li>
-<li class="list-inline-item">
-<img src="assets/img/payment-mastercard.svg" alt="mastercard" width="50" />
-</li>
-<li class="list-inline-item">
-<img src="assets/img/troy.svg" alt="troy" width="45" />
-</li>
-<li class="list-inline-item">
-<img src="assets/img/paypal.svg" alt="paypal" width="50" />
-</li>
-</ul>
-</div>
-</div>
-</div>
-</div>
-</div>
-
-
-<button class="scroll-top scroll-to-target" data-target="html">
-<i class="ti-rocket"></i>
-</button>
-
-
-<script src="assets/js/vendors/jquery-3.5.1.min.js" type="8a5ab964741b469b050e0853-text/javascript"></script>
-<script src="assets/js/vendors/bootstrap.bundle.min.js" type="8a5ab964741b469b050e0853-text/javascript"></script>
-<script src="assets/js/vendors/bootstrap-slider.min.js" type="8a5ab964741b469b050e0853-text/javascript"></script>
-<script src="assets/js/vendors/jquery.countdown.min.js" type="8a5ab964741b469b050e0853-text/javascript"></script>
-<script src="assets/js/vendors/jquery.easing.min.js" type="8a5ab964741b469b050e0853-text/javascript"></script>
-<script src="assets/js/vendors/owl.carousel.min.js" type="8a5ab964741b469b050e0853-text/javascript"></script>
-<script src="assets/js/vendors/validator.min.js" type="8a5ab964741b469b050e0853-text/javascript"></script>
-<script src="assets/js/vendors/jquery.waypoints.min.js" type="8a5ab964741b469b050e0853-text/javascript"></script>
-<script src="assets/js/vendors/jquery.rcounterup.js" type="8a5ab964741b469b050e0853-text/javascript"></script>
-<script src="assets/js/vendors/magnific-popup.min.js" type="8a5ab964741b469b050e0853-text/javascript"></script>
-<script src="assets/js/vendors/hs.megamenu.js" type="8a5ab964741b469b050e0853-text/javascript"></script>
-<script src="assets/js/app.js" type="8a5ab964741b469b050e0853-text/javascript"></script>
-<script src="assets/js/particles.js" type="8a5ab964741b469b050e0853-text/javascript"></script>
-<script src='assets/js/countdown.js' type="8a5ab964741b469b050e0853-text/javascript"></script>
-<script src='assets/js/jquery.countTo.js' type="8a5ab964741b469b050e0853-text/javascript"></script>
-<script src='assets/js/jQuery.countdownTimer.min.js' type="8a5ab964741b469b050e0853-text/javascript"></script>
-<script src='assets/js/iq-counter.js' type="8a5ab964741b469b050e0853-text/javascript"></script>
-<script src='assets/js/wm.js' type="8a5ab964741b469b050e0853-text/javascript"></script>
-
-
-<script type="8a5ab964741b469b050e0853-text/javascript">
-    particlesJS("particles-js", {
-  "particles": {
-    "number": {
-      "value": 100,
-      "density": {
-        "enable": true,
-        "value_area": 800
-      }
-    },
-    "color": {
-      "value": "#ffffff"
-    },
-    "shape": {
-      "type": "circle",
-      "stroke": {
-        "width": 0,
-        "color": "#000000"
-      },
-      "polygon": {
-        "nb_sides": 5
-      },
-      "image": {
-        "src": "img/github.svg",
-        "width": 100,
-        "height": 100
-      }
-    },
-    "opacity": {
-      "value": 0.5,
-      "random": false,
-      "anim": {
-        "enable": false,
-        "speed": 1,
-        "opacity_min": 0.1,
-        "sync": false
-      }
-    },
-    "size": {
-      "value": 3,
-      "random": true,
-      "anim": {
-        "enable": false,
-        "speed": 40,
-        "size_min": 0.1,
-        "sync": false
-      }
-    },
-    "line_linked": {
-      "enable": true,
-      "distance": 150,
-      "color": "#ffffff",
-      "opacity": 0.4,
-      "width": 1
-    },
-    "move": {
-      "enable": true,
-      "speed": 3,
-      "direction": "none",
-      "random": true,
-      "straight": false,
-      "out_mode": "out",
-      "bounce": false,
-      "attract": {
-        "enable": false,
-        "rotateX": 600,
-        "rotateY": 1200
-      }
-    }
-  },
-  "interactivity": {
-    "detect_on": "canvas",
-    "events": {
-      "onhover": {
-        "enable": true,
-        "mode": "grab"
-      },
-      "onclick": {
-        "enable": true,
-        "mode": "push"
-      },
-      "resize": true
-    },
-    "modes": {
-      "grab": {
-        "distance": 140,
-        "line_linked": {
-          "opacity": 1
-        }
-      },
-      "bubble": {
-        "distance": 400,
-        "size": 40,
-        "duration": 2,
-        "opacity": 8,
-        "speed": 3
-      },
-      "repulse": {
-        "distance": 200,
-        "duration": 0.4
-      },
-      "push": {
-        "particles_nb": 4
-      },
-      "remove": {
-        "particles_nb": 2
-      }
-    }
-  },
-  "retina_detect": true
-});
-
-
-
-var count_particles, stats, update;
-stats = new Stats;
-stats.setMode(0);
-stats.domElement.style.position = 'absolute';
-stats.domElement.style.left = '0px';
-stats.domElement.style.top = '0px';
-document.body.appendChild(stats.domElement);
-count_particles = document.querySelector('.js-count-particles');
-update = function() {
-  stats.begin();
-  stats.end();
-  if (window.pJSDom[0].pJS.particles && window.pJSDom[0].pJS.particles.array) {
-    count_particles.innerText = window.pJSDom[0].pJS.particles.array.length;
-  }
-  requestAnimationFrame(update);
-};
-requestAnimationFrame(update);
-</script>
-
-
-
-<script src="/cdn-cgi/scripts/7d0fa10a/cloudflare-static/rocket-loader.min.js" data-cf-settings="8a5ab964741b469b050e0853-|49" defer></script></body>
-
+                  </div>
+               </div>
+            </div>
+            <div class="col-lg-6 pl-0 pr-0">
+               <div class="service-main-right-con"></div>
+            </div>
+            <div class="service-box-content wow slideInRight">
+               <figure>
+                  <img src="assets/image/service-box-img.png" alt="service-box-img" class="img-fluid">
+               </figure>
+               <h6>Creative Security Solutions</h6>
+               <p>Quos dolores et quas molestias excepturi sint 
+                  occaecati cuiditate non provident.
+               </p>
+               <a href="about.html">Read more <i class="fas fa-chevron-right"></i></a>
+            </div>
+         </div>
+      </div>
+      <!-- service-section -->
+      <!---Cyber-Security-section-->
+      <section>
+         <div class="Cyber-Security-con bg-overly-img w-100">
+            <div class="container overlay-content">
+               <div class="row">
+                  <div class="col-lg-6 col-md-12 Cyber-Security-left-con wow slideInLeft">
+                     <div class="row Cyber-Security-left-main-con">
+                        <div class="col-lg-6 col-md-6 col-sm-6 text-center">
+                           <div class="Cyber-Security-left-card-con">
+                              <div class="Cyber-Security-left-card-img">
+                                 <figure>
+                                    <img src="assets/image/Cyber-Security-left-card-img1.png" alt="Cyber-Security-left-card-img" class="img-fluid">
+                                 </figure>
+                              </div>
+                              <div class="Cyber-Security-left-card-title">
+                                 <h3 class="count">3329</h3>
+                                 <p class="mb-0">Global Projects</p>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="col-lg-6 col-md-6 col-sm-6 text-center">
+                           <div class="Cyber-Security-left-card-con">
+                              <div class="Cyber-Security-left-card-img">
+                                 <figure>
+                                    <img src="assets/image/Cyber-Security-left-card-img2.png" alt="Cyber-Security-left-card-img" class="img-fluid">
+                                 </figure>
+                              </div>
+                              <div class="Cyber-Security-left-card-title">
+                                 <h3 class="count">4587</h3>
+                                 <p class="mb-0">Clients Protect</p>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="row">
+                        <div class="col-lg-6 col-md-6 col-sm-6 text-center">
+                           <div class="Cyber-Security-left-card-con">
+                              <div class="Cyber-Security-left-card-img">
+                                 <figure>
+                                    <img src="assets/image/Cyber-Security-left-card-img3.png" alt="Cyber-Security-left-card-img" class="img-fluid">
+                                 </figure>
+                              </div>
+                              <div class="Cyber-Security-left-card-title">
+                                 <h3 class="count d-inline-block">100</h3>
+                                 <span class="text-white static-txt2">%</span>
+                                 <p class="mb-0">Service Guarantee</p>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="col-lg-6 col-md-6 col-sm-6 text-center">
+                           <div class="Cyber-Security-left-card-con mb-0">
+                              <div class="Cyber-Security-left-card-img">
+                                 <figure>
+                                    <img src="assets/image/Cyber-Security-left-card-img4.png" alt="Cyber-Security-left-card-img" class="img-fluid">
+                                 </figure>
+                              </div>
+                              <div class="Cyber-Security-left-card-title position-relative d-inline-block">
+                                 <h3 class="count">7845</h3>
+                                 <span class="text-white position-absolute static-txt">+</span>
+                                 <p class="mb-0">Experts Team</p>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="col-lg-6 col-md-12 Cyber-Security-right-con wow slideInRight">
+                     <div class="Cyber-Security-right-heading-con">
+                        <h5>Statistics</h5>
+                        <h2>Our Large Acheivements
+                           in Cyber Security
+                        </h2>
+                        <p>Repudiandae irure dolor in reprehenderit in voluptate velit esse 
+                           dolore eu fugiat nulla pariatur excepteur sint occaecat cupidatat 
+                           non proident, sunt in culpa qui officia deserunt mollit anim id est 
+                           laborum incidunt ut labore et dolore magnam.
+                        </p>
+                        <a href="about.html" class="contact-btn">Get started</a>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </section>
+      <!---Cyber-Security-section-->
+      <!-- Pricing-section -->
+      <section>
+         <div class="Pricing-con dots-left-img">
+            <div class="container overlay-content">
+               <div class="Pricing-title text-center">
+                  <h5>What we offer</h5>
+                  <h2>Our Flexible Pricing Plans</h2>
+               </div>
+               <div class="row wow fadeInUp">
+                  <div class="col-lg-4 col-md-4 col-12 mb-lg-0 mb-md-0 mb-4 Pricing-box-main-con">
+                     <div class="Pricing-box-con">
+                        <div class="Pricing-box-img text-center">
+                           <figure>
+                              <img src="assets/image/pricing-box-img1.png" alt="pricing-box-img" class="img-fluid">
+                           </figure>
+                        </div>
+                        <div class="Pricing-box-heading text-center">
+                           <h4>Beginner</h4>
+                           <h2>$120</h2>
+                           <p>/ Per Month</p>
+                        </div>
+                        <div class="Pricing-box-list text-xl-left text-lg-left text-md-left text-center">
+                           <ul class="list-unstyled list">
+                              <li><i class="fas fa-check-circle"></i>Quia voluptas sit asern.</li>
+                              <li><i class="fas fa-check-circle"></i>Exercitationem ullam corois.</li>
+                              <li><i class="fas fa-check-circle"></i>Modi tempora incidunt.</li>
+                              <li><i class="fas fa-check-circle"></i>Laudantium totam rem aei. </li>
+                              <li><i class="fas fa-check-circle"></i>Duis aute irure dolor reae.</li>
+                           </ul>
+                        </div>
+                        <div class="Pricing-box-link text-center">
+                           <a href="pricing.html" class="contact-btn">Get started</a>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="col-lg-4 col-md-4 col-12 mb-lg-0 mb-md-0 mb-4 Pricing-box-main-con">
+                     <div class="Pricing-box-con">
+                        <div class="Pricing-box-img text-center">
+                           <figure>
+                              <img src="assets/image/pricing-box-img2.png" alt="pricing-box-img" class="img-fluid">
+                           </figure>
+                        </div>
+                        <div class="Pricing-box-heading text-center">
+                           <h4>Business</h4>
+                           <h2>$180</h2>
+                           <p>/ Per Month</p>
+                        </div>
+                        <div class="Pricing-box-list text-xl-left text-lg-left text-md-left text-center">
+                           <ul  class="list-unstyled list">
+                              <li><i class="fas fa-check-circle"></i>Quia voluptas sit asern.</li>
+                              <li><i class="fas fa-check-circle"></i>Exercitationem ullam corois.</li>
+                              <li><i class="fas fa-check-circle"></i>Modi tempora incidunt.</li>
+                              <li><i class="fas fa-check-circle"></i>Laudantium totam rem aei. </li>
+                              <li><i class="fas fa-check-circle"></i>Duis aute irure dolor reae.</li>
+                           </ul>
+                        </div>
+                        <div class="Pricing-box-link text-center">
+                           <a href="pricing.html" class="contact-btn">Get started</a>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="col-lg-4 col-md-4 col-12 Pricing-box-main-con">
+                     <div class="Pricing-box-con">
+                        <div class="Pricing-box-img text-center">
+                           <figure>
+                              <img src="assets/image/pricing-box-img3.png" alt="pricing-box-img" class="img-fluid">
+                           </figure>
+                        </div>
+                        <div class="Pricing-box-heading text-center">
+                           <h4>Professional</h4>
+                           <h2>$200</h2>
+                           <p>/ Per Month</p>
+                        </div>
+                        <div class="Pricing-box-list text-xl-left text-lg-left text-md-left text-center">
+                           <ul class="list-unstyled list">
+                              <li><i class="fas fa-check-circle"></i>Quia voluptas sit asern.</li>
+                              <li><i class="fas fa-check-circle"></i>Exercitationem ullam corois.</li>
+                              <li><i class="fas fa-check-circle"></i>Modi tempora incidunt.</li>
+                              <li><i class="fas fa-check-circle"></i>Laudantium totam rem aei. </li>
+                              <li><i class="fas fa-check-circle"></i>Duis aute irure dolor reae.</li>
+                           </ul>
+                        </div>
+                        <div class="Pricing-box-link text-center">
+                           <a href="pricing.html" class="contact-btn">Get started</a>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </section>
+      <!-- Pricing-section -->
+      <!-- blog-post-section -->
+      <section>
+         <div class="blog-post-con dots-right-img">
+            <div class="container overlay-content">
+               <div class="blog-post-heading text-center">
+                  <h5>Our NEws</h5>
+                  <h2>Latest Blog Posts</h2>
+               </div>
+               <div class="row">
+                  <div class="col-lg-6 col-md-6 col-12 mb-lg-0 mb-md-0  mb-4 wow slideInLeft">
+                     <div class="blog-post-item">
+                        <div class="blog-post-item-img">
+                           <a href="single-post.html">
+                              <figure class="mb-0">
+                                 <img src="assets/image/blog-post-img1.png" alt="blog-post-img" class="img-fluid">
+                              </figure>
+                           </a>
+                        </div>
+                        <div class="blog-post-item-title">
+                           <a href="single-post.html">
+                              <h6>Trend In Design</h6>
+                           </a>
+                           <a href="single-post.html">
+                              <h4 class="mb-3">Protect Your Workplace From 
+                                 Cyber Attacks
+                              </h4>
+                           </a>
+                           <a href="single-post.html" class="blog-post-item-title-link">Read more <i class="fas fa-chevron-right"></i></a>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="col-lg-6 col-md-6 col-12 wow slideInRight">
+                     <div class="blog-post-item">
+                        <div class="blog-post-item-img">
+                           <a href="single-post.html">
+                              <figure class="mb-0">
+                                 <img src="assets/image/blog-post-img2.png" alt="blog-post-img" class="img-fluid">
+                              </figure>
+                           </a>
+                        </div>
+                        <div class="blog-post-item-title">
+                           <a href="single-post.html">
+                              <h6>Management</h6>
+                           </a>
+                           <a href="single-post.html">
+                              <h4 class="mb-3">Security In A Fragment World Of 
+                                 Workload For Your Business
+                              </h4>
+                           </a>
+                           <a href="single-post.html" class="blog-post-item-title-link">Read more <i class="fas fa-chevron-right"></i></a>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </section>
+      <!-- blog-post-section -->
+      <!-- get-start-section-->
+      <section>
+         <div class="get-start-con bg-overly-img ">
+            <div class="container overlay-content">
+               <div class="get-start-title text-center">
+                  <h1>Ready To Get Started?
+                     We're Here To Help.
+                  </h1>
+                  <div class="get-start-link text-center">
+                     <a href="contact.html" class="contact-btn">Let’s Talk</a>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </section>
+      <!-- get-start-section-->
+      <!--form-section-->
+      <section>
+         <div class="form-main-con dots-left-img">
+            <div class="container overlay-content">
+               <div class="form-title-con text-center wow slideInLeft">
+                  <h5>Get in touch</h5>
+                  <h2>Send us a Message</h2>
+               </div>
+               <form class="form-inner-con wow slideInLeft" id="contactpage" method="POST">
+                  <div class="row">
+                     <div class="col-lg-4 col-md-4 col-12">
+                        <input type="text" placeholder="Name" name="name" id="name"> 
+                     </div>
+                     <div class="col-lg-4 col-md-4 col-12">
+                        <input type="email"  placeholder="Email" name="email" id="email"> 
+                     </div>
+                     <div class="col-lg-4 col-md-4 col-12">
+                        <input type="tel" placeholder="Phone" name="phone" id="phone">
+                     </div>
+                  </div>
+                  <div class="row">
+                     <div class="col-lg-12">
+                        <textarea class="w-100"  placeholder="Message" rows="3" name="comments" id="comments"></textarea>
+                     </div>
+                  </div>
+                  <div class="row">
+                     <div class="col-lg-12 text-center">
+                        <button type="submit" id="submit" class="contact-btn" >Submit</button>
+                     </div>
+                  </div>
+               </form>
+            </div>
+         </div>
+      </section>
+      <!--form-section-->
+      <!-- weight-footer-section -->
+      <section>
+         <div class="weight-footer-main-con bg-overly-img">
+            <div class="container overlay-content">
+               <div class="weight-footer-item-con">
+                  <div class="row wow fadeInUp">
+                     <div class="col-lg-4 col-md-12 col-12 text-lg-left text-md-center">
+                        <div class="weight-footer-item weight-footer-item1 mb-lg-0 mb-3">
+                           <div class="weight-footer-item-img">
+                              <figure>
+                                 <img src="assets/image/logo-img.png" alt="logo-img" class="img-fluid">
+                              </figure>
+                           </div>
+                           <div class="weight-footer-item-content">
+                              <p class="mb-xl-0 mb-lg-0 mb-md-4 weight-footer-item1-content">Deleniti atque corrupti quos dolores et quas 
+                                 molestias excepturi sint occaecati rupiditate 
+                                 non provident, similique sunt in culpa qui 
+                                 officia deserunt mollitia animi..
+                              </p>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="col-lg-2 col-md-3 col-5">
+                        <div class="weight-footer-item mb-lg-0 mb-md-0 mb-3">
+                           <div class="weight-footer-item-title">
+                              <h3>About Us</h3>
+                           </div>
+                           <div class="weight-footer-item-link">
+                              <ul class="list-unstyled mb-0">
+                                 <li>
+                                    <a href="about.html">
+                                    About us
+                                    </a>
+                                 </li>
+                                 <li>
+                                    <a href="services.html">
+                                    Services
+                                    </a>
+                                 </li>
+                                 <li>
+                                    <a href="pricing.html">
+                                    Pricing
+                                    </a>
+                                 </li>
+                                 <li>
+                                    <a href="team.html">
+                                    Team
+                                    </a>
+                                 </li>
+                                 <li class="mb-0">
+                                    <a href="contact.html">
+                                    Contact us
+                                    </a> 
+                                 </li>
+                              </ul>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="col-lg-3 col-md-4 col-7">
+                        <div class="weight-footer-item mb-lg-0 mb-md-0 mb-3">
+                           <div class="weight-footer-item-title">
+                              <h3>Our Services</h3>
+                           </div>
+                           <div class="weight-footer-item-content weight-footer-item-link">
+                              <ul class="list-unstyled mb-0 social-icon-list">
+                                 <li class="weight-footer-item2-content col-lg-11 pl-0 pr-0">121 King Street Melbourne,
+                                    3000,  Australia
+                                 </li>
+                                 <li>
+                                    <a href="mailto:info@cyberchip.com">
+                                    info@cyberchip.com 
+                                    </a>
+                                 </li>
+                                 <li>
+                                    <a href="tel:+123456789">+1 23 45 6789</a>
+                                 </li>
+                                 <li class="d-inline-block mb-0"><a href="https://www.facebook.com/"><i class="fab fa-facebook-f"></i></a></li>
+                                 <li class="d-inline-block mb-0"><a href="https://twitter.com/?lang=en"><i class="fab fa-twitter"></i></a></li>
+                                 <li class="d-inline-block mb-0"><a href="https://www.instagram.com/accounts/login/"><i class="fab fa-instagram"></i></a></li>
+                              </ul>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="col-lg-3 col-md-5 col-12">
+                        <div class="weight-footer-item mb-0">
+                           <div class="weight-footer-item-title">
+                              <h3 class="Newsletter-title">Newsletter</h3>
+                           </div>
+                           <div class="weight-footer-item-form">
+                              <div class="weight-footer-item-form-input">
+                                 <input type="email" placeholder="Enter your email">
+                                 <button class="border-0" value="">
+                                 <img src="assets/image/submit-img.png" alt="submit-img" class="img-fluid">
+                                 </button>
+                              </div>
+                              <div class="form-group mb-0">
+                                 <input type="checkbox" id="html">
+                                 <label for="html" class="checkbox-details mb-0">I Agree to the Terms</label>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <div class="footer-con">
+               <div class="container overlay-content">
+                  <div class="row">
+                     <div class="col-lg-12">
+                        <div class="footer-con text-center">
+                           <p>Copyright cyberchip © 2022. All Rights Reserved.</p>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </section>
+      <!-- weight-footer-section -->
+      <script src="assets/js/wow.js"></script>
+      <script>
+         new WOW().init();
+      </script>
+      <script src="assets/js/jquery-3.6.0.min.js"> </script>
+      <script src="assets/js/popper.min.js"> </script>
+      <script src="assets/js/bootstrap.min.js"> </script>
+      <script src="assets/js/custom-script.js"> </script>
+   </body>
 </html>
