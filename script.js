@@ -1,43 +1,53 @@
-alphabet = new Array("A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O", "P", "Q", "R", "S", "T", "U", "V", "W", "X", "Y", "Z", "1", "2", "3", "4", "5", "6", "7", "8", "9", "0");
-letter_count = 0;
-el = $("#loading");
-word = el.html().trim();
-finished = false;
+const boxes = document.querySelectorAll(".box");
+const heading = document.querySelector(".heading span");
+const btn = document.querySelector(".btn");
 
-el.html("");
-for (var i = 0; i < word.length; i++) {
-  el.append("<span>"+word.charAt(i)+"</span>");
-}
+const colors = [
+  "#efd81d",
+  "#61dbfb",
+  "#41b883",
+  "#b52e31",
+  "#43853d",
+  "#cf649a",
+  "#e04e39",
+];
 
-setTimeout(write, 75);
-incrementer = setTimeout(inc, 1000);
+const techs = ["JS", "React", "Vue", "Angular", "Node", "Sass", "Ember"];
 
-function write() {
-  for (var i = letter_count; i < word.length; i++) {
-    var c = Math.floor(Math.random() * 36);
-    $("span")[i].innerHTML = alphabet[c];
-  }
-  if (!finished) {
-    setTimeout(write, 75);
-  }
-}
+let current = 1;
 
-function inc() {
-  $("span")[letter_count].innerHTML = word[letter_count];
-  $("span:eq("+letter_count+")").addClass("glow");
-  letter_count++;
-  if (letter_count >= word.length) {
-    finished = true;
-    setTimeout(reset, 1500);
-  } else {
-    setTimeout(inc, 1000);
-  }
-}
+const textStyle = () => {
+  heading.style.color = colors[current - 1];
+  heading.textContent = techs[current - 1];
+  btn.style.backgroundColor = colors[current - 1];
+  btn.firstElementChild.textContent = techs[current - 1];
+};
 
-function reset() {
-  letter_count = 0;
-  finished = false;
-  setTimeout(inc, 1000);
-  setTimeout(write, 75);
-  $("span").removeClass("glow");
-}
+let interval = setInterval(() => {
+  boxes.forEach((box) => {
+    if (current > boxes.length) current = 1;
+
+    if (box.classList[1].split("-")[1] * 1 === current) {
+      box.classList.add("active");
+    } else {
+      box.classList.remove("active");
+    }
+  });
+  textStyle();
+  current++;
+}, 5000);
+
+boxes.forEach((box) => {
+  box.addEventListener("click", () => {
+    boxes.forEach((cube) => {
+      cube.classList.remove("active");
+    });
+    box.classList.add("active");
+
+    current = box.classList[1].split("-")[1] * 1;
+
+    textStyle();
+
+    clearInterval(interval);
+  });
+});
