@@ -42,24 +42,8 @@ export default function Footer(props) {
           xl: "start",
         }}
         mb={{ base: "20px", xl: "0px" }}>
-        &copy; {1900 + new Date().getYear()},{" "}
-        <Text as='span'>
-          {document.documentElement.dir === "rtl"
-            ? " مصنوع من ❤️ بواسطة"
-            : "Made with ❤️ by "}
-        </Text>
-        <Link href='https://www.simmmple.com' target='_blank'>
-          {document.documentElement.dir === "rtl"
-            ? " توقيت الإبداعية"
-            : "Simmmple "}
-        </Link>
-        &
-        <Link href='https://www.creative-tim.com' target='_blank'>
-          {document.documentElement.dir === "rtl" ? "سيممبل " : " Creative Tim"}
-        </Link>
-        {document.documentElement.dir === "rtl"
-          ? "للحصول على ويب أفضل"
-          : " for a better web"}
+        &copy; {1900 + new Date().getYear()} Alldata Cyber Security. Tüm hakları
+        saklıdır.
       </Text>
       <List display='flex'>
         <ListItem
@@ -67,10 +51,8 @@ export default function Footer(props) {
             base: "20px",
             md: "44px",
           }}>
-          <Link color='white' fontSize='sm' href='https://www.simmmple.com'>
-            {document.documentElement.dir === "rtl"
-              ? "توقيت الإبداعية"
-              : "Simmmple"}
+          <Link color='white' fontSize='sm' href='#about'>
+            Hakkımızda
           </Link>
         </ListItem>
         <ListItem
@@ -78,8 +60,8 @@ export default function Footer(props) {
             base: "20px",
             md: "44px",
           }}>
-          <Link color='white' fontSize='sm' href='https://www.creative-tim.com'>
-            {document.documentElement.dir === "rtl" ? "سيممبل" : "Creative Tim"}
+          <Link color='white' fontSize='sm' href='#security'>
+            Güvenlik
           </Link>
         </ListItem>
         <ListItem
@@ -87,23 +69,16 @@ export default function Footer(props) {
             base: "20px",
             md: "44px",
           }}>
-          <Link
-            color='white'
-            fontSize='sm'
-            href='https://creative-tim.com/blog'>
-            {document.documentElement.dir === "rtl" ? "مدونة" : "Blog"}
+          <Link color='white' fontSize='sm' href='mailto:support@alldata.com'>
+            Destek
           </Link>
         </ListItem>
         <ListItem>
-          <Link
-            color='white'
-            fontSize='sm'
-            href='https://www.creative-tim.com/license'>
-            {document.documentElement.dir === "rtl" ? "رخصة" : "License"}
+          <Link color='white' fontSize='sm' href='mailto:sales@alldata.com'>
+            İletişim
           </Link>
         </ListItem>
       </List>
     </Flex>
   );
 }
-

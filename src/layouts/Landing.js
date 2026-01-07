@@ -1,4 +1,4 @@
-/*!
+/*! 
 
 =========================================================
 * Vision UI Free Chakra - v1.0.0
@@ -17,23 +17,20 @@
 */
 
 import React from "react";
-import ReactDOM from "react-dom";
-import { HashRouter, Route, Switch, Redirect } from "react-router-dom";
+import { Box, ChakraProvider } from "@chakra-ui/react";
+import AuthNavbar from "components/Navbars/AuthNavbar";
+import Footer from "components/Footer/Footer";
+import Landing from "views/Pages/Landing";
+import theme from "theme/themeAuth";
 
-import AuthLayout from "layouts/Auth.js";
-import AdminLayout from "layouts/Admin.js";
-import RTLLayout from "layouts/RTL.js";
-import LandingLayout from "layouts/Landing.js";
-
-ReactDOM.render(
-  <HashRouter>
-    <Switch>
-      <Route path={`/`} exact component={LandingLayout} />
-      <Route path={`/auth`} component={AuthLayout} />
-      <Route path={`/admin`} component={AdminLayout} />
-      <Route path={`/rtl`} component={RTLLayout} />
-      <Redirect to='/' />
-    </Switch>
-  </HashRouter>,
-  document.getElementById("root")
-);
+export default function LandingLayout() {
+  return (
+    <ChakraProvider theme={theme} resetCss={false} w='100%'>
+      <Box w='100%'>
+        <AuthNavbar logoText='ALLDATA' />
+        <Landing />
+        <Footer />
+      </Box>
+    </ChakraProvider>
+  );
+}

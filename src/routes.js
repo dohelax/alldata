@@ -38,7 +38,7 @@ import {
 var dashRoutes = [
   {
     path: "/dashboard",
-    name: "Dashboard",
+    name: "Canlı Durum",
     rtlName: "لوحة القيادة",
     icon: <HomeIcon color='inherit' />,
     component: Dashboard,
@@ -46,7 +46,7 @@ var dashRoutes = [
   },
   {
     path: "/tables",
-    name: "Tables",
+    name: "Cihaz Envanteri",
     rtlName: "لوحة القيادة",
     icon: <StatsIcon color='inherit' />,
     component: Tables,
@@ -54,7 +54,7 @@ var dashRoutes = [
   },
   {
     path: "/billing",
-    name: "Billing",
+    name: "Lisanslar",
     rtlName: "لوحة القيادة",
     icon: <CreditIcon color='inherit' />,
     component: Billing,
@@ -76,7 +76,7 @@ var dashRoutes = [
     views: [
       {
         path: "/profile",
-        name: "Profile",
+        name: "Operatör Profili",
         rtlName: "لوحة القيادة",
         icon: <PersonIcon color='inherit' />,
         secondaryNavbar: true,
@@ -85,7 +85,7 @@ var dashRoutes = [
       },
       {
         path: "/signin",
-        name: "Sign In",
+        name: "Giriş",
         rtlName: "لوحة القيادة",
         icon: <DocumentIcon color='inherit' />,
         component: SignIn,
@@ -93,7 +93,7 @@ var dashRoutes = [
       },
       {
         path: "/signup",
-        name: "Sign Up",
+        name: "Kayıt",
         rtlName: "لوحة القيادة",
         icon: <RocketIcon color='inherit' />,
         secondaryNavbar: true,

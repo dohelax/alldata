@@ -67,7 +67,6 @@ export default function AuthNavbar(props) {
   var brand = (
     <Link
       href={`${process.env.PUBLIC_URL}/#/`}
-      target='_blank'
       display='flex'
       lineHeight='100%'
       fontWeight='bold'
@@ -95,10 +94,10 @@ export default function AuthNavbar(props) {
           color={navbarIcon}
           variant='transparent-with-icon'
           leftIcon={<HomeIcon color={navbarIcon} w='12px' h='12px' me='0px' />}>
-          <Text>Dashboard</Text>
+          <Text>Kontrol Paneli</Text>
         </Button>
       </NavLink>
-      <NavLink to='/admin/profile'>
+      <NavLink to='/admin/tables'>
         <Button
           fontSize='sm'
           ms='0px'
@@ -110,10 +109,10 @@ export default function AuthNavbar(props) {
           leftIcon={
             <PersonIcon color={navbarIcon} w='12px' h='12px' me='0px' />
           }>
-          <Text>Profile</Text>
+          <Text>Cihazlar</Text>
         </Button>
       </NavLink>
-      <NavLink to='/auth/signup'>
+      <NavLink to='/auth/signin'>
         <Button
           fontSize='sm'
           ms='0px'
@@ -125,10 +124,10 @@ export default function AuthNavbar(props) {
           leftIcon={
             <RocketIcon color={navbarIcon} w='12px' h='12px' me='0px' />
           }>
-          <Text>Sign Up</Text>
+          <Text>Giriş</Text>
         </Button>
       </NavLink>
-      <NavLink to='/auth/signin'>
+      <NavLink to='/auth/signup'>
         <Button
           fontSize='sm'
           ms='0px'
@@ -139,7 +138,7 @@ export default function AuthNavbar(props) {
           leftIcon={
             <DocumentIcon color={navbarIcon} w='12px' h='12px' me='0px' />
           }>
-          <Text>Sign In</Text>
+          <Text>Kayıt</Text>
         </Button>
       </NavLink>
     </HStack>
@@ -177,7 +176,7 @@ export default function AuthNavbar(props) {
           />
         </Box>
         {linksAuth}
-        <Link href='https://creative-tim.com/product/vision-ui-dashboard-chakra'>
+        <Link href='mailto:sales@alldata.com'>
           <Button
             fontSize='xs'
             variant='brand'
@@ -187,7 +186,7 @@ export default function AuthNavbar(props) {
               sm: "none",
               lg: "flex",
             }}>
-            Free Download
+            Teklif Al
           </Button>
         </Link>
       </Flex>

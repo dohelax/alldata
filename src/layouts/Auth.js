@@ -107,14 +107,14 @@ export default function Pages(props) {
         <Portal containerRef={navRef}>
           <AuthNavbar
             secondary={getActiveNavbar(routes)}
-            logoText='VISION UI FREE'
+            logoText='ALLDATA'
           />
         </Portal>
         <Box w='100%'>
           <Box ref={wrapper} w='100%'>
             <Switch>
               {getRoutes(routes)}
-              <Redirect from='/auth' to='/auth/login-page' />
+              <Redirect from='/auth' to='/auth/signin' />
             </Switch>
           </Box>
         </Box>

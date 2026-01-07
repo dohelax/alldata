@@ -76,11 +76,11 @@ export default function Dashboard() {
 						<Flex flexDirection='row' align='center' justify='center' w='100%'>
 							<Stat me='auto'>
 								<StatLabel fontSize='sm' color='gray.400' fontWeight='bold' pb='2px'>
-									Today's Money
+									Aktif Firewall
 								</StatLabel>
 								<Flex>
 									<StatNumber fontSize='lg' color='#fff'>
-										$53,000
+										128
 									</StatNumber>
 									<StatHelpText
 										alignSelf='flex-end'
@@ -90,7 +90,7 @@ export default function Dashboard() {
 										fontWeight='bold'
 										ps='3px'
 										fontSize='md'>
-										+55%
+										+4%
 									</StatHelpText>
 								</Flex>
 							</Stat>
@@ -106,11 +106,11 @@ export default function Dashboard() {
 						<Flex flexDirection='row' align='center' justify='center' w='100%'>
 							<Stat me='auto'>
 								<StatLabel fontSize='sm' color='gray.400' fontWeight='bold' pb='2px'>
-									Today's Users
+									Aktif Switch
 								</StatLabel>
 								<Flex>
 									<StatNumber fontSize='lg' color='#fff'>
-										2,300
+										1,920
 									</StatNumber>
 									<StatHelpText
 										alignSelf='flex-end'
@@ -120,7 +120,7 @@ export default function Dashboard() {
 										fontWeight='bold'
 										ps='3px'
 										fontSize='md'>
-										+5%
+										+2%
 									</StatHelpText>
 								</Flex>
 							</Stat>
@@ -136,11 +136,11 @@ export default function Dashboard() {
 						<Flex flexDirection='row' align='center' justify='center' w='100%'>
 							<Stat>
 								<StatLabel fontSize='sm' color='gray.400' fontWeight='bold' pb='2px'>
-									New Clients
+									Kritik Uyarı
 								</StatLabel>
 								<Flex>
 									<StatNumber fontSize='lg' color='#fff'>
-										+3,020
+										18
 									</StatNumber>
 									<StatHelpText
 										alignSelf='flex-end'
@@ -150,7 +150,7 @@ export default function Dashboard() {
 										fontWeight='bold'
 										ps='3px'
 										fontSize='md'>
-										-14%
+										-9%
 									</StatHelpText>
 								</Flex>
 							</Stat>
@@ -167,11 +167,11 @@ export default function Dashboard() {
 						<Flex flexDirection='row' align='center' justify='center' w='100%'>
 							<Stat me='auto'>
 								<StatLabel fontSize='sm' color='gray.400' fontWeight='bold' pb='2px'>
-									Total Sales
+									Toplam Trafik
 								</StatLabel>
 								<Flex>
 									<StatNumber fontSize='lg' color='#fff' fontWeight='bold'>
-										$173,000
+										42.8 Gbps
 									</StatNumber>
 									<StatHelpText
 										alignSelf='flex-end'
@@ -181,7 +181,7 @@ export default function Dashboard() {
 										fontWeight='bold'
 										ps='3px'
 										fontSize='md'>
-										+8%
+										+12%
 									</StatHelpText>
 								</Flex>
 							</Stat>
@@ -204,14 +204,14 @@ export default function Dashboard() {
 						<Flex flexDirection={{ sm: 'column', lg: 'row' }} w='100%' h='100%'>
 							<Flex flexDirection='column' h='100%' p='22px' minW='60%' lineHeight='1.6'>
 								<Text fontSize='sm' color='gray.400' fontWeight='bold'>
-									Welcome back,
+									Hoş geldiniz,
 								</Text>
 								<Text fontSize='28px' color='#fff' fontWeight='bold' mb='18px'>
-									Mark Johnson
+									Alldata NOC
 								</Text>
 								<Text fontSize='md' color='gray.400' fontWeight='normal' mb='auto'>
-									Glad to see you again! <br />
-									Ask me anything.
+									Canlı telemetri akışı hazır. <br />
+									İstediğiniz cihazı veya bölgeyi sorgulayın.
 								</Text>
 								<Spacer />
 								<Flex align='center'>
@@ -228,7 +228,7 @@ export default function Dashboard() {
 											transition='all .3s ease'
 											my={{ sm: '1.5rem', lg: '0px' }}
 											_hover={{ me: '4px' }}>
-											Tab to record
+											Olay Kaydı
 										</Text>
 										<Icon
 											as={BsArrowRight}
@@ -253,10 +253,10 @@ export default function Dashboard() {
 					<CardHeader mb='24px'>
 						<Flex direction='column'>
 							<Text color='#fff' fontSize='lg' fontWeight='bold' mb='4px'>
-								Satisfaction Rate
+								Sistem Sağlığı
 							</Text>
 							<Text color='gray.400' fontSize='sm'>
-								From all projects
+								Tüm cihazlar genelinde
 							</Text>
 						</Flex>
 					</CardHeader>
@@ -295,7 +295,7 @@ export default function Dashboard() {
 									95%
 								</Text>
 								<Text fontSize='xs' color='gray.400'>
-									Based on likes
+									SLA bazlı
 								</Text>
 							</Flex>
 							<Text fontSize='xs' color='gray.400'>
@@ -309,7 +309,7 @@ export default function Dashboard() {
 					<Flex direction='column'>
 						<Flex justify='space-between' align='center' mb='40px'>
 							<Text color='#fff' fontSize='lg' fontWeight='bold'>
-								Referral Tracking
+								Tehdit Skoru
 							</Text>
 							<Button borderRadius='12px' w='38px' h='38px' bg='#22234B' _hover='none' _active='none'>
 								<Icon as={IoEllipsisHorizontal} color='#7551FF' />
@@ -326,10 +326,10 @@ export default function Dashboard() {
 									borderRadius='20px'
 									mb='20px'>
 									<Text color='gray.400' fontSize='sm' mb='4px'>
-										Invited
+										Ağ Segmenti
 									</Text>
 									<Text color='#fff' fontSize='lg' fontWeight='bold'>
-										145 people
+										145 bölge
 									</Text>
 								</Flex>
 								<Flex
@@ -340,10 +340,10 @@ export default function Dashboard() {
 									bg='linear-gradient(126.97deg, #060C29 28.26%, rgba(4, 12, 48, 0.5) 91.2%)'
 									borderRadius='20px'>
 									<Text color='gray.400' fontSize='sm' mb='4px'>
-										Bonus
+										Yüksek Risk
 									</Text>
 									<Text color='#fff' fontSize='lg' fontWeight='bold'>
-										1,465
+										1.465
 									</Text>
 								</Flex>
 							</Flex>
@@ -357,7 +357,7 @@ export default function Dashboard() {
 									<CircularProgressLabel>
 										<Flex direction='column' justify='center' align='center'>
 											<Text color='gray.400' fontSize='sm'>
-												Safety
+												Güvenlik
 											</Text>
 											<Text
 												color='#fff'
@@ -367,7 +367,7 @@ export default function Dashboard() {
 												9.3
 											</Text>
 											<Text color='gray.400' fontSize='sm'>
-												Total Score
+												Toplam Skor
 											</Text>
 										</Flex>
 									</CircularProgressLabel>
@@ -387,13 +387,13 @@ export default function Dashboard() {
 					<CardHeader mb='20px' ps='22px'>
 						<Flex direction='column' alignSelf='flex-start'>
 							<Text fontSize='lg' color='#fff' fontWeight='bold' mb='6px'>
-								Sales Overview
+								Trafik Görünümü
 							</Text>
 							<Text fontSize='md' fontWeight='medium' color='gray.400'>
 								<Text as='span' color='green.400' fontWeight='bold'>
-									(+5%) more
+									(+5%)
 								</Text>{' '}
-								in 2021
+								geçen haftaya göre
 							</Text>
 						</Flex>
 					</CardHeader>
@@ -423,13 +423,13 @@ export default function Dashboard() {
 							</Box>
 							<Flex direction='column' mt='24px' mb='36px' alignSelf='flex-start'>
 								<Text fontSize='lg' color='#fff' fontWeight='bold' mb='6px'>
-									Active Users
+									Canlı Oturumlar
 								</Text>
 								<Text fontSize='md' fontWeight='medium' color='gray.400'>
 									<Text as='span' color='green.400' fontWeight='bold'>
 										(+23%)
 									</Text>{' '}
-									than last week
+									geçen haftaya göre
 								</Text>
 							</Flex>
 							<SimpleGrid gap={{ sm: '12px' }} columns={4}>
@@ -439,7 +439,7 @@ export default function Dashboard() {
 											<WalletIcon h={'15px'} w={'15px'} color='#fff' />
 										</IconBox>
 										<Text fontSize='sm' color='gray.400'>
-											Users
+											Oturumlar
 										</Text>
 									</Flex>
 									<Text
@@ -448,7 +448,7 @@ export default function Dashboard() {
 										fontWeight='bold'
 										mb='6px'
 										my='6px'>
-										32,984
+										32.984
 									</Text>
 									<Progress colorScheme='brand' bg='#2D2E5F' borderRadius='30px' h='5px' value={20} />
 								</Flex>
@@ -458,7 +458,7 @@ export default function Dashboard() {
 											<RocketIcon h={'15px'} w={'15px'} color='#fff' />
 										</IconBox>
 										<Text fontSize='sm' color='gray.400'>
-											Clicks
+											Paket
 										</Text>
 									</Flex>
 									<Text
@@ -477,7 +477,7 @@ export default function Dashboard() {
 											<CartIcon h={'15px'} w={'15px'} color='#fff' />
 										</IconBox>
 										<Text fontSize='sm' color='gray.400'>
-											Sales
+											Drop
 										</Text>
 									</Flex>
 									<Text
@@ -486,7 +486,7 @@ export default function Dashboard() {
 										fontWeight='bold'
 										mb='6px'
 										my='6px'>
-										2,400$
+										2.4%
 									</Text>
 									<Progress colorScheme='brand' bg='#2D2E5F' borderRadius='30px' h='5px' value={30} />
 								</Flex>
@@ -496,7 +496,7 @@ export default function Dashboard() {
 											<StatsIcon h={'15px'} w={'15px'} color='#fff' />
 										</IconBox>
 										<Text fontSize='sm' color='gray.400'>
-											Items
+											Cihaz
 										</Text>
 									</Flex>
 									<Text
@@ -520,15 +520,15 @@ export default function Dashboard() {
 					<CardHeader p='12px 0px 28px 0px'>
 						<Flex direction='column'>
 							<Text fontSize='lg' color='#fff' fontWeight='bold' pb='8px'>
-								Projects
+								Cihaz Kümeleri
 							</Text>
 							<Flex align='center'>
 								<Icon as={IoCheckmarkDoneCircleSharp} color='teal.300' w={4} h={4} pe='3px' />
 								<Text fontSize='sm' color='gray.400' fontWeight='normal'>
 									<Text fontWeight='bold' as='span'>
-										30 done
+										30 güncel
 									</Text>{' '}
-									this month.
+									bu ay.
 								</Text>
 							</Flex>
 						</Flex>
@@ -541,16 +541,16 @@ export default function Dashboard() {
 									color='gray.400'
 									fontFamily='Plus Jakarta Display'
 									borderBottomColor='#56577A'>
-									Companies
+									Küme
 								</Th>
 								<Th color='gray.400' fontFamily='Plus Jakarta Display' borderBottomColor='#56577A'>
-									Members
+									Ekip
 								</Th>
 								<Th color='gray.400' fontFamily='Plus Jakarta Display' borderBottomColor='#56577A'>
-									Budget
+									Durum
 								</Th>
 								<Th color='gray.400' fontFamily='Plus Jakarta Display' borderBottomColor='#56577A'>
-									Completion
+									Uptime
 								</Th>
 							</Tr>
 						</Thead>
@@ -575,7 +575,7 @@ export default function Dashboard() {
 					<CardHeader mb='32px'>
 						<Flex direction='column'>
 							<Text fontSize='lg' color='#fff' fontWeight='bold' mb='6px'>
-								Orders overview
+								Olay Akışı
 							</Text>
 							<Flex align='center'>
 								<Icon as={AiFillCheckCircle} color='green.500' w='15px' h='15px' me='5px' />
@@ -583,7 +583,7 @@ export default function Dashboard() {
 									<Text fontWeight='bold' as='span' color='gray.400'>
 										+30%
 									</Text>{' '}
-									this month
+									son 24 saat
 								</Text>
 							</Flex>
 						</Flex>

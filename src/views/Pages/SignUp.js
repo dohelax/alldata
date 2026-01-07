@@ -33,6 +33,7 @@ import {
   Icon,
   DarkMode,
 } from "@chakra-ui/react";
+import { NavLink } from "react-router-dom";
 
 // Icons
 import { FaApple, FaFacebook, FaGoogle } from "react-icons/fa";
@@ -79,7 +80,7 @@ function SignUp() {
               lineHeight='39px'
               color='white'
               fontWeight='bold'>
-              Welcome!
+              Hoş geldiniz!
             </Text>
             <Text
               fontSize='md'
@@ -87,8 +88,8 @@ function SignUp() {
               fontWeight='normal'
               mt='10px'
               w={{ base: "100%", md: "90%", lg: "90%", xl: "80%" }}>
-              Use these awesome forms to login or create new account in your
-              project for free.
+              Alldata Secure Cloud panelini denemek için yeni bir ekip hesabı
+              oluşturun.
             </Text>
           </Flex>
           <GradientBorder p='2px' me={{ base: "none", lg: "30px", xl: "none" }}>
@@ -109,7 +110,7 @@ function SignUp() {
                 fontWeight='bold'
                 textAlign='center'
                 mb='22px'>
-                Register With
+                Şununla Kayıt Ol
               </Text>
               <HStack spacing='15px' justify='center' mb='22px'>
                 <GradientBorder borderRadius='15px'>
@@ -185,7 +186,7 @@ function SignUp() {
                 fontWeight='bold'
                 textAlign='center'
                 mb='22px'>
-                or
+                veya
               </Text>
               <FormControl>
                 <FormLabel
@@ -193,7 +194,7 @@ function SignUp() {
                   ms='4px'
                   fontSize='sm'
                   fontWeight='normal'>
-                  Name
+                  Ad Soyad
                 </FormLabel>
 
                 <GradientBorder
@@ -214,7 +215,7 @@ function SignUp() {
                     maxW='100%'
                     h='46px'
                     type='text'
-                    placeholder='Your name'
+                    placeholder='Adınız'
                   />
                 </GradientBorder>
                 <FormLabel
@@ -222,7 +223,7 @@ function SignUp() {
                   ms='4px'
                   fontSize='sm'
                   fontWeight='normal'>
-                  Email
+                  E-posta
                 </FormLabel>
                 <GradientBorder
                   mb='24px'
@@ -242,7 +243,7 @@ function SignUp() {
                     maxW='100%'
                     h='46px'
                     type='email'
-                    placeholder='Your email address'
+                    placeholder='Kurumsal e-posta adresiniz'
                   />
                 </GradientBorder>
                 <FormLabel
@@ -250,7 +251,7 @@ function SignUp() {
                   ms='4px'
                   fontSize='sm'
                   fontWeight='normal'>
-                  Password
+                  Parola
                 </FormLabel>
                 <GradientBorder
                   mb='24px'
@@ -270,7 +271,7 @@ function SignUp() {
                     maxW='100%'
                     h='46px'
                     type='password'
-                    placeholder='Your password'
+                    placeholder='Parolanız'
                   />
                 </GradientBorder>
                 <FormControl display='flex' alignItems='center' mb='24px'>
@@ -283,7 +284,7 @@ function SignUp() {
                     htmlFor='remember-login'
                     mb='0'
                     fontWeight='normal'>
-                    Remember me
+                    Beni hatırla
                   </FormLabel>
                 </FormControl>
                 <Button
@@ -295,7 +296,7 @@ function SignUp() {
                   h='45'
                   mb='20px'
                   mt='20px'>
-                  SIGN UP
+                  KAYIT OL
                 </Button>
               </FormControl>
               <Flex
@@ -305,14 +306,14 @@ function SignUp() {
                 maxW='100%'
                 mt='0px'>
                 <Text color={textColor} fontWeight='medium'>
-                  Already have an account?
+                  Zaten hesabınız var mı?
                   <Link
                     color={titleColor}
-                    as='span'
+                    as={NavLink}
+                    to='/auth/signin'
                     ms='5px'
-                    href='#'
                     fontWeight='bold'>
-                    Sign In
+                    Giriş Yap
                   </Link>
                 </Text>
               </Flex>
@@ -352,7 +353,7 @@ function SignUp() {
               letterSpacing='8px'
               fontSize='20px'
               fontWeight='500'>
-              INSPIRED BY THE FUTURE:
+              GELECEĞİN AĞ GÜVENLİĞİ
             </Text>
             <Text
               textAlign='center'
@@ -362,7 +363,7 @@ function SignUp() {
               fontWeight='bold'
               bgClip='text !important'
               bg='linear-gradient(94.56deg, #FFFFFF 79.99%, #21242F 102.65%)'>
-              THE VISION UI DASHBOARD
+              ALLDATA SECURE FABRIC
             </Text>
           </Box>
         </Box>
